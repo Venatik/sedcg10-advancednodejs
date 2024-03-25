@@ -3,7 +3,7 @@ import { createPath } from "../utils/utils.js";
 import Movie from "../entities/movie.entity.js";
 
 const moviesPath = createPath(["..", "..", "db", "movies.json"]);
-console.log("MOVIES PATH:", moviesPath);
+// console.log("MOVIES PATH:", moviesPath);
 
 export default class MovieModel {
     static async getAll() {

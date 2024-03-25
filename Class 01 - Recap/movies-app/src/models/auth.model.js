@@ -2,7 +2,8 @@ import DataService from "../services/data.service.js";
 import { createPath } from "../utils/utils.js";
 import bcrypt from "bcryptjs";
 
-const usersPath = createPath(["db", "users.json"]); // CHECK
+const usersPath = createPath(["..", "db", "users.json"]); // CHECK
+console.log("USERS PATH:", usersPath);
 
 export default class AuthModel {
     static async getAll() {
