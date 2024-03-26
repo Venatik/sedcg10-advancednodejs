@@ -2,8 +2,8 @@ import DataService from "../services/data.service.js";
 import { createPath } from "../utils/utils.js";
 import Movie from "../entities/movie.entity.js";
 
-const moviesPath = createPath(["..", "..", "db", "movies.json"]);
-// console.log("MOVIES PATH:", moviesPath);
+const moviesPath = createPath(["..", "db", "movies.json"]);
+console.log("MOVIES PATH:", moviesPath);
 
 export default class MovieModel {
     static async getAll() {
