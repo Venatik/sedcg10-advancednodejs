@@ -1,7 +1,5 @@
 import { Schema, model } from "mongoose";
 import { categories } from "../utils/constants.js";
-import { reviewSchema } from "./review.model.js";
-import { ratingSchema } from "./rating.model.js";
 
 // product schema
 // product model
