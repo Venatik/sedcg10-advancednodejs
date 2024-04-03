@@ -9,9 +9,12 @@ const cartSchema = new Schema({
     products: [{
         type: Schema.Types.ObjectId,
         ref: "product",
-    }]
+    }],
+    cartId: {
+        type: Number,
+    }
 }, { timestamps: true });
 
-const Cart = model("cart", cartSchema, "cart");
+const Cart = model("cart", cartSchema, "carts");
 
 export default Cart;
