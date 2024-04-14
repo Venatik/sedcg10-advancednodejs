@@ -2,7 +2,7 @@ import { IsEmail, IsNumber, IsString, Min, MinLength } from 'class-validator';
 
 export class CreateStudentDto {
   @IsString()
-  @MinLength(5)
+  @MinLength(3)
   readonly name: string;
 
   @IsNumber()
