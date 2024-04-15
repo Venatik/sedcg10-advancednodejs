@@ -23,7 +23,6 @@ exports.AppModule = AppModule = __decorate([
             config_1.ConfigModule.forRoot({
                 isGlobal: true,
                 envFilePath: '.env',
-                ignoreEnvFile: false,
             }),
             academy_module_1.AcademyModule,
             subject_module_1.SubjectModule,
