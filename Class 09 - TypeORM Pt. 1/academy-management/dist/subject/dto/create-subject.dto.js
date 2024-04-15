@@ -21,7 +21,7 @@ __decorate([
 ], CreateSubjectDto.prototype, "name", void 0);
 __decorate([
     (0, class_validator_1.IsInt)(),
-    (0, class_validator_1.Min)(4),
+    (0, class_validator_1.Min)(0),
     __metadata("design:type", Number)
 ], CreateSubjectDto.prototype, "numberOfClasses", void 0);
 __decorate([
@@ -29,11 +29,7 @@ __decorate([
     __metadata("design:type", String)
 ], CreateSubjectDto.prototype, "difficulty", void 0);
 __decorate([
-    (0, class_validator_1.IsNumber)(),
+    (0, class_validator_1.IsInt)(),
     __metadata("design:type", Number)
 ], CreateSubjectDto.prototype, "academyId", void 0);
-__decorate([
-    (0, class_validator_1.IsString)(),
-    __metadata("design:type", String)
-], CreateSubjectDto.prototype, "trainerId", void 0);
 //# sourceMappingURL=create-subject.dto.js.map

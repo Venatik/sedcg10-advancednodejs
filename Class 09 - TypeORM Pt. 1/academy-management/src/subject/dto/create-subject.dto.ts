@@ -1,4 +1,4 @@
-import { IsEnum, IsInt, IsNumber, IsString, Min } from 'class-validator';
+import { IsEnum, IsInt, IsString, Min } from 'class-validator';
 import { Difficulty } from '../../utils/difficulty.enum';
 
 export class CreateSubjectDto {
@@ -6,15 +6,12 @@ export class CreateSubjectDto {
   readonly name: string;
 
   @IsInt()
-  @Min(4)
+  @Min(0)
   readonly numberOfClasses: number;
 
   @IsEnum(Difficulty)
   readonly difficulty: Difficulty;
 
-  @IsNumber()
+  @IsInt()
   readonly academyId: number;
-
-  @IsString()
-  readonly trainerId: string;
 }

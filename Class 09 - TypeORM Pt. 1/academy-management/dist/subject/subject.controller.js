@@ -71,14 +71,9 @@ __decorate([
     __param(0, (0, common_1.Param)('id')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
-    __metadata("design:returntype", void 0)
+    __metadata("design:returntype", Promise)
 ], SubjectController.prototype, "remove", null);
 exports.SubjectController = SubjectController = __decorate([
-    (0, common_1.UsePipes)(new common_1.ValidationPipe({
-        whitelist: true,
-        forbidNonWhitelisted: true,
-        transform: true,
-    })),
     (0, common_1.Controller)('subject'),
     __metadata("design:paramtypes", [subject_service_1.SubjectService])
 ], SubjectController);

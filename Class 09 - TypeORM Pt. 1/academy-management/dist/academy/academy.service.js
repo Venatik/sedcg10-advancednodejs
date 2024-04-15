@@ -30,7 +30,7 @@ let AcademyService = class AcademyService {
         }
         catch (error) {
             if (error.name === 'EntityNotFoundError') {
-                throw new common_1.NotFoundException(`Academy with ID ${id} not found.`);
+                throw new common_1.NotFoundException(`Academy with ID ${id} not found`);
             }
             throw error;
         }

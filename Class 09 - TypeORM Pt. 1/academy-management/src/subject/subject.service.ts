@@ -17,13 +17,14 @@ export class SubjectService {
   }
 
   async findOne(id: number): Promise<Subject> {
+    // findOneByOrFail from a repository typically throws an EntityNotFoundError if no entity is found with the provided criteria
     try {
       return this.subjectRepository.findOneByOrFail({ id });
     } catch (error) {
       if (error.name === 'EntityNotFoundError') {
-        throw new NotFoundException(`Subject with ID ${id} not found.`);
+        throw new NotFoundException(`Subject with ID ${id} not found`);
       }
-      throw error;
+      throw error; // rethrow the error if it's not the expected error type
     }
   }
 

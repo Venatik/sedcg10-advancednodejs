@@ -4,5 +4,4 @@ export declare class CreateSubjectDto {
     readonly numberOfClasses: number;
     readonly difficulty: Difficulty;
     readonly academyId: number;
-    readonly trainerId: string;
 }

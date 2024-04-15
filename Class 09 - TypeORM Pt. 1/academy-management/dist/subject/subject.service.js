@@ -30,7 +30,7 @@ let SubjectService = class SubjectService {
         }
         catch (error) {
             if (error.name === 'EntityNotFoundError') {
-                throw new common_1.NotFoundException(`Subject with ID ${id} not found.`);
+                throw new common_1.NotFoundException(`Subject with ID ${id} not found`);
             }
             throw error;
         }
