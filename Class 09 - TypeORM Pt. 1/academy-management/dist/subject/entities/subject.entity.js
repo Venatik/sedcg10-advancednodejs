@@ -12,9 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Subject = void 0;
 const academy_entity_1 = require("../../academy/entities/academy.entity");
 const typeorm_1 = require("typeorm");
-(0, typeorm_1.Entity)();
-class Subject {
-}
+let Subject = class Subject {
+};
 exports.Subject = Subject;
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
@@ -41,4 +40,7 @@ __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", Number)
 ], Subject.prototype, "academyId", void 0);
+exports.Subject = Subject = __decorate([
+    (0, typeorm_1.Entity)()
+], Subject);
 //# sourceMappingURL=subject.entity.js.map

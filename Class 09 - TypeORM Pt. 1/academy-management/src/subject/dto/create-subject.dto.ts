@@ -1,5 +1,5 @@
 import { IsEnum, IsInt, IsString, Min } from 'class-validator';
-import { Difficulty } from '../../utils/difficulty.enum';
+import { Difficulty } from 'src/util/difficulty.enum';
 
 export class CreateSubjectDto {
   @IsString()

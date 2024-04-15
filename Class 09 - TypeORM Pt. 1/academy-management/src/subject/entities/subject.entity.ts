@@ -1,13 +1,13 @@
 import { Academy } from 'src/academy/entities/academy.entity';
 import {
-  Column,
   Entity,
-  JoinColumn,
-  ManyToOne,
   PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  JoinColumn,
 } from 'typeorm';
 
-Entity();
+@Entity()
 export class Subject {
   @PrimaryGeneratedColumn()
   id: number;

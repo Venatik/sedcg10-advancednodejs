@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CreateSubjectDto = void 0;
 const class_validator_1 = require("class-validator");
-const difficulty_enum_1 = require("../../utils/difficulty.enum");
+const difficulty_enum_1 = require("../../util/difficulty.enum");
 class CreateSubjectDto {
 }
 exports.CreateSubjectDto = CreateSubjectDto;
