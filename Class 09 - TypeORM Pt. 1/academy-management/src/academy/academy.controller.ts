@@ -32,7 +32,7 @@ export class AcademyController {
 
   @Get(':id')
   findOne(@Param('id') id: string): Promise<Academy> {
-    return this.academyService.findOne(+id); // converts number-like strings into numbers
+    return this.academyService.findOne(+id); // converts number-like string into number
   }
 
   @Post()
@@ -41,10 +41,7 @@ export class AcademyController {
   }
 
   @Patch(':id')
-  update(
-    @Param('id') id: string,
-    @Body() updateAcademyDto: UpdateAcademyDto,
-  ): Promise<Academy> {
+  update(@Param('id') id: string, @Body() updateAcademyDto: UpdateAcademyDto) {
     return this.academyService.update(+id, updateAcademyDto);
   }
 

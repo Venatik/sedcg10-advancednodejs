@@ -4,7 +4,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 @Entity()
 export class Academy {
   @PrimaryGeneratedColumn()
-  id: number; // In MongoDB this would be of type string. In Postgres, it's of type number.
+  id: number;
 
   @Column()
   name: string;

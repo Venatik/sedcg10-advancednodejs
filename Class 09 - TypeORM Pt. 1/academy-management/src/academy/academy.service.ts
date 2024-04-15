@@ -17,17 +17,18 @@ export class AcademyService {
   }
 
   // async findOne(id: number): Promise<Academy> {
-  //   return this.academyRepository.findOneBy({ id });
+  //   return this.academyRepository.findOneBy({id});
   // }
 
   async findOne(id: number): Promise<Academy> {
+    // findOneByOrFail from a repository typically throws an EntityNotFoundError if no entity is found with the provided criteria
     try {
       return this.academyRepository.findOneByOrFail({ id });
     } catch (error) {
       if (error.name === 'EntityNotFoundError') {
-        throw new NotFoundException(`Academy with ID ${id} not found.`);
+        throw new NotFoundException(`Academy with ID ${id} not found`);
       }
-      throw error;
+      throw error; // rethrow the error if it's not the expected error type
     }
   }
 
