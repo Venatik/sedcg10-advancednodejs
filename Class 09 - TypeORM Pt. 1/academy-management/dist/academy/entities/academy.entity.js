@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Academy = void 0;
+const student_entity_1 = require("../../student/entities/student.entity");
 const subject_entity_1 = require("../../subject/entities/subject.entity");
 const typeorm_1 = require("typeorm");
 let Academy = class Academy {
@@ -43,6 +44,10 @@ __decorate([
     (0, typeorm_1.OneToMany)(() => subject_entity_1.Subject, (subject) => subject.academy),
     __metadata("design:type", Array)
 ], Academy.prototype, "subjects", void 0);
+__decorate([
+    (0, typeorm_1.OneToMany)(() => student_entity_1.Student, (student) => student.academy),
+    __metadata("design:type", Array)
+], Academy.prototype, "students", void 0);
 exports.Academy = Academy = __decorate([
     (0, typeorm_1.Entity)()
 ], Academy);

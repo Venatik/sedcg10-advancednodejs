@@ -1,3 +1,4 @@
+import { Student } from 'src/student/entities/student.entity';
 import { Subject } from 'src/subject/entities/subject.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
@@ -23,4 +24,7 @@ export class Academy {
 
   @OneToMany(() => Subject, (subject) => subject.academy)
   subjects: Subject[];
+
+  @OneToMany(() => Student, (student) => student.academy)
+  students: Student[];
 }

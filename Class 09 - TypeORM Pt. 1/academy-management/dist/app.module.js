@@ -14,6 +14,8 @@ const academy_module_1 = require("./academy/academy.module");
 const subject_module_1 = require("./subject/subject.module");
 const database_module_1 = require("./database/database.module");
 const config_1 = require("@nestjs/config");
+const student_module_1 = require("./student/student.module");
+const trainer_module_1 = require("./trainer/trainer.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -27,6 +29,8 @@ exports.AppModule = AppModule = __decorate([
             academy_module_1.AcademyModule,
             subject_module_1.SubjectModule,
             database_module_1.DatabaseModule,
+            student_module_1.StudentModule,
+            trainer_module_1.TrainerModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

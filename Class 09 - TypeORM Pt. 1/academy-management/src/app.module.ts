@@ -5,6 +5,8 @@ import { AcademyModule } from './academy/academy.module';
 import { SubjectModule } from './subject/subject.module';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from '@nestjs/config';
+import { StudentModule } from './student/student.module';
+import { TrainerModule } from './trainer/trainer.module';
 
 // @nestjs/config is a configuration module for Nest based on the dotenv
 
@@ -18,6 +20,8 @@ import { ConfigModule } from '@nestjs/config';
     AcademyModule,
     SubjectModule,
     DatabaseModule,
+    StudentModule,
+    TrainerModule,
   ],
   controllers: [AppController],
   providers: [AppService],
