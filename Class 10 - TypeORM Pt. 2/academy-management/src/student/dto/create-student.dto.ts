@@ -1,4 +1,4 @@
-import { IsNumber, IsString } from 'class-validator';
+import { IsNumber, IsObject, IsString } from 'class-validator';
 import { CreateStudentDetailDto } from 'src/student-details/dto/create-student-detail.dto';
 
 export class CreateStudentDto {
@@ -14,5 +14,6 @@ export class CreateStudentDto {
   @IsNumber()
   readonly academyId: number;
 
+  @IsObject()
   studentDetail: CreateStudentDetailDto;
 }
